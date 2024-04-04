@@ -1,0 +1,15 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_buttons {
+        display: flex;
+        justify-content: space-between;
+        gap: 3vw;
+
+        &_color {
+            @extend %buttom-color;
+        }
+    }
+}

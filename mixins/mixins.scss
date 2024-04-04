@@ -1,0 +1,26 @@
+@mixin fluid-text ($min:16, $max:48){
+    font-size: clamp(#{$min}px, #{$max/ 1920 * 100}vw, #{$max}px);
+}
+
+@mixin block-structure ($color) {
+    &_text{
+        &_little_text{
+            color: #446381;
+            @include fluid-text (16, 52); 
+        }
+
+        &_title_mayn{
+            color: #EB8382;
+            @include fluid-text (24, 60); 
+        } 
+
+        &_text_title_second{
+            color: $color;
+            @include fluid-text (16, 52); 
+        }
+
+        &_button{
+            @extend %buttom-color;
+        }
+    }
+}

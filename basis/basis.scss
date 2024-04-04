@@ -1,0 +1,14 @@
+body{
+    color: #826F8C;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #FCD8CB;
+    padding-left: 10%;
+    padding-right: 10%;
+    @include fluid-text (12, 48); 
+}
+
+a{
+    color: #446381;
+    text-decoration: none;
+}
+

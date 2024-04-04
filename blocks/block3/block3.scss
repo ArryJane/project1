@@ -1,0 +1,4 @@
+.block3{
+    @extend %flex-stem;
+    @include block-structure(#EB8382);
+}
